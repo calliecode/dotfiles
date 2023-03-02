@@ -1,27 +1,38 @@
-syntax enable
-filetype plugin indent on
-
-" when hitting tab key
-set tabstop=4
-" when indenting with '>'
-set shiftwidth=4
-
-set expandtab
-
 set number
 set relativenumber
 
-" bindings for workman layout
+nnoremap j gj
+nnoremap k gk
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+syntax enable
+filetype plugin indent on
+
+" rebind movement keys for workman layout
+nnoremap y h
 nnoremap n j
 nnoremap e k
-nnoremap y h
 nnoremap o l
-onoremap n j
-onoremap e k
-onoremap y h
-onoremap o l
 
-" rearranging the displaced keys
+nnoremap y h
+nnoremap n j
+nnoremap e k
+nnoremap o l
+
+" rearranging displaced keys
+" l = new line
+" h = end of word
+" k = yank
+" j = next search
 nnoremap l o
-nnoremap j y
-nnoremap k e
+nnoremap h e
+nnoremap k y
+nnoremap j n
+
+onoremap l o
+onoremap h e
+onoremap k y
+onoremap j n
