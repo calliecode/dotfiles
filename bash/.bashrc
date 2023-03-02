@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='\033[33;22m\w\$\033[37;0m '
 else
     PS1='\w\$ '
 fi
@@ -97,3 +97,5 @@ fi
 export PATH="$PATH:$HOME/sts-scripts"
 export ENV="$Home/.cargo/bin"
 export STOW_DIR=~/dotfiles
+
+alias xclip="xclip -selection clipboard"
