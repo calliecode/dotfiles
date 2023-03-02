@@ -94,6 +94,6 @@ if ! shopt -oq posix; then
 fi
 . "$HOME/.cargo/env"
 
-. $HOME/scripts/setupenv.sh
+export PATH="$PATH:$HOME/sts-scripts"
 export ENV="$Home/.cargo/bin"
-export STOW_DIR=~/etc
+export STOW_DIR=~/dotfiles
