@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\033[33;22m\w\$\033[37;0m '
+     PS1='\[\033[36;22m\]\w \[\033[33;22m\]\$\[\033[37;0m\] '
 else
     PS1='\w\$ '
 fi
