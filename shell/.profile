@@ -6,8 +6,4 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-if test -z $SSH_TTY && test -z $TMUX
-then
-	startx
-fi
 . "$HOME/.cargo/env"
