@@ -1,0 +1,15 @@
+[keys.normal]
+y = "move_char_left"
+o = "move_char_right"
+n = "move_line_down"
+e = "move_line_up"
+
+k = "yank"
+l = "open_below"
+L = "open_above"
+
+h = "move_next_word_end"
+H = "move_next_long_word_end"
+j = "search_next"
+J = "search_prev"
+
