@@ -1,3 +1,15 @@
+[editor]
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["file-name"]
+right = []
+
 [keys.normal]
 y = "move_char_left"
 o = "move_char_right"
@@ -13,3 +25,32 @@ H = "move_next_long_word_end"
 j = "search_next"
 J = "search_prev"
 
+[keys.normal."+"]
+m = ":run-shell-command make"
+c = ":run-shell-command cargo build"
+t = ":run-shell-command cargo test"
+
+[keys.select]
+y = "move_char_left"
+o = "move_char_right"
+n = "move_line_down"
+e = "move_line_up"
+
+k = "yank"
+l = "open_below"
+L = "open_above"
+
+h = "move_next_word_end"
+H = "move_next_long_word_end"
+j = "search_next"
+J = "search_prev"
+
+[keys.insert]
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+home = "no_op"
+end = "no_op"
