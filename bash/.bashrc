@@ -92,7 +92,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. "$HOME/.cargo/env"
 
 export PATH="$PATH:$HOME/sts-scripts"
 export ENV="$Home/.cargo/bin"
