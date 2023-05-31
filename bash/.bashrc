@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-     PS1='\[\033[36;22m\]\w \[\033[33;22m\]\$\[\033[37;0m\] '
+     PS1='\[\033[36;22m\]\w \[\033[33;22m\]$(git_prompt)\$ \[\033[37;0m\]'
 else
     PS1='\w\$ '
 fi
@@ -98,3 +98,11 @@ export ENV="$Home/.cargo/bin"
 export STOW_DIR=~/dotfiles
 
 alias xclip="xclip -selection clipboard"
+
+git_prompt() {
+  local branch="$(git symbolic-ref HEAD 2> /dev/null | cut -d'/' -f3-)"
+  if [ -n "${branch}" ]
+  then
+    echo "[${branch}] "
+  fi
+}
