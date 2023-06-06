@@ -3,7 +3,7 @@ case $- in
       *) return;;
 esac
 
-PS1='$(prompt_host_symbol) \[\033[36;22m\]$(pwd_prompt)\[\033[33;22m\]$(git_prompt)\$ \[\033[37;0m\]'
+PS1='$(prompt_host_symbol) \[\033[36;22m\]$(pwd_prompt)\[\033[31;22m\]$(git_prompt)\[\033[33;22m\]\$ \[\033[37;0m\]'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
