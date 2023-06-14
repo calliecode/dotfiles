@@ -2,6 +2,7 @@ theme = "autumn_night"
 
 [editor]
 line-number = "relative"
+auto-pairs = false #UGH who uses this feature??
 
 [editor.cursor-shape]
 insert = "bar"
@@ -10,7 +11,7 @@ select = "underline"
 
 [editor.statusline]
 left = ["file-name"]
-right = []
+#right = ["version-control"] not supported in current nix package version?
 
 [keys.normal]
 y = "move_char_left"
