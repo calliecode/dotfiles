@@ -22,6 +22,7 @@ export PATH="$PATH:$HOME/sts-scripts"
 export ENV="$Home/.cargo/bin"
 export STOW_DIR=~/dotfiles
 export EDITOR=hx
+export TERMINAL=st
 
 alias xclip="xclip -selection clipboard"
 alias x="xclip -selection clipboard"

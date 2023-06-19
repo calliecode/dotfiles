@@ -1,0 +1,45 @@
+#system functions
+super + s
+	spectacle
+super + t
+	$TERMINAL -e $HOME/scripts/ta
+super + e
+    setxkbmap us
+super + k
+    setxkbmap us workman
+super + y
+    dwmc setmfact -0.05
+super + o
+    dwmc setmfact +0.05
+super + b
+    dwmc togglebar
+super + n
+    dwmc focusstack +1
+super + c
+    dwmc killclient 
+super + shift + q
+    dwmc quit
+super + Return
+    dwmc zoom
+super + shift + {1-9}
+    dwmc tagex {0-8}
+super + {1-9}
+    dwmc viewex {0-8}
+
+# launch program
+super + space
+    exec st
+super + v
+	firefox
+#super + a
+#    krita
+
+
+# DWM Bindings: these are reserved
+#               by the window manager!
+
+# (All use super/meta key)
+# shift + 1-9   move window to tag
+# shift + 0     make window stick to all tags
+# 1-9           display specific tag
+# shift + q     quit X
