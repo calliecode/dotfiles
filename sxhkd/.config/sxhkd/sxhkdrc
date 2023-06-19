@@ -31,6 +31,8 @@ super + space
     exec st
 super + v
 	firefox
+super + m
+    microsoft-edge
 #super + a
 #    krita
 
