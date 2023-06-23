@@ -1,6 +1,4 @@
 #system functions
-super + s
-	spectacle
 super + t
 	$TERMINAL -e $HOME/scripts/ta
 super + e
@@ -27,6 +25,8 @@ super + {1-9}
     dwmc viewex {0-8}
 
 # launch program
+super + s
+	spectacle
 super + space
     exec st
 super + v
@@ -35,6 +35,8 @@ super + m
     microsoft-edge
 #super + a
 #    krita
+super + r
+    st newsboat
 
 
 # DWM Bindings: these are reserved
