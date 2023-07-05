@@ -57,3 +57,7 @@ pageup = "no_op"
 pagedown = "no_op"
 home = "no_op"
 end = "no_op"
+
+[keys.normal.space]
+k = "yank_joined_to_clipboard"
+K = "yank_main_selection_to_clipboard"
