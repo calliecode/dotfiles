@@ -1,6 +1,6 @@
 #system functions
 super + t
-	$TERMINAL -e $HOME/scripts/ta
+    teamviewer
 super + e
     setxkbmap us
 super + k
@@ -23,6 +23,8 @@ super + shift + {1-9}
     dwmc tagex {0-8}
 super + {1-9}
     dwmc viewex {0-8}
+super + a
+    azuredatastudio
 
 # launch program
 super + s
