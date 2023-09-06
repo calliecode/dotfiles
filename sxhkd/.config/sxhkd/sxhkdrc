@@ -25,6 +25,8 @@ super + {1-9}
     dwmc viewex {0-8}
 super + a
     azuredatastudio
+super + x
+    uncapitalize.sh
 
 # launch program
 super + s
