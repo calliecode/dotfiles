@@ -1,6 +1,14 @@
 #system functions
+super + s
+	maim > ~/screenshot.png
+super + f
+	$TERMINAL -e $HOME/scripts/bookmarks.sh
 super + t
-    teamviewer
+	$TERMINAL -e $HOME/scripts/ta
+super + F11
+    $HOME/scripts/lockscreen.sh
+super + F12 
+    $HOME/scripts/hibernate.sh
 super + e
     setxkbmap us
 super + k
@@ -23,24 +31,32 @@ super + shift + {1-9}
     dwmc tagex {0-8}
 super + {1-9}
     dwmc viewex {0-8}
-super + a
-    azuredatastudio
-super + x
-    uncapitalize.sh
+
+# Eventually I want to move all hotkeys to sxhkd
+# I'll need to read the source code to figure out
+# how to handle tags with dwmc though, and I can't
+# be assed to do that right now
+# (btw future me: you need to install a patch to
+# send signals to dwm with dwmc. It's on the 
+# suckless website)
 
 # launch program
-super + s
-	spectacle
 super + space
-    exec st
+    $TERMINAL
+super + r
+	$TERMINAL -e newsboat
+super + q
+	qutebrowser
+super + p
+	$TERMINAL -e cmus
+super + m
+	claws-mail
+super + y
+	freetube
 super + v
 	firefox
-super + m
-    microsoft-edge
-#super + a
-#    krita
-super + r
-    st newsboat
+super + a
+    krita
 
 
 # DWM Bindings: these are reserved

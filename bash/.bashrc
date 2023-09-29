@@ -50,3 +50,5 @@ prompt_host_symbol() {
     *) echo '?';;
   esac
 }
+
+eval "$(direnv hook bash)"
