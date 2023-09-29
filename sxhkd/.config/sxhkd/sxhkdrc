@@ -42,13 +42,13 @@ super + {1-9}
 
 # launch program
 super + space
-    $TERMINAL
+    exec st
 super + r
-	$TERMINAL -e newsboat
+	exec st -e newsboat
 super + q
 	qutebrowser
 super + p
-	$TERMINAL -e cmus
+	exec st -e cmus
 super + m
 	claws-mail
 super + y

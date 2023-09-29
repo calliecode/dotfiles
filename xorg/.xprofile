@@ -1,0 +1,4 @@
+sxhkd -m -1 &
+~/.fehbg &
+barrier &
+
