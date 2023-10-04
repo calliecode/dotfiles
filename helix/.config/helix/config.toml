@@ -13,6 +13,9 @@ select = "underline"
 left = ["file-name"]
 #right = ["version-control"] not supported in current nix package version?
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 y = "move_char_left"
 o = "move_char_right"
