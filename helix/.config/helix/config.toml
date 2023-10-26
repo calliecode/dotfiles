@@ -31,8 +31,8 @@ H = "move_next_long_word_end"
 j = "search_next"
 J = "search_prev"
 
-C-n = "goto_next_function"
-C-e = "goto_prev_function"
+A-n = "goto_next_function"
+A-e = "goto_prev_function"
 
 [keys.normal."+"]
 m = ":run-shell-command make"
