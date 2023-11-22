@@ -28,7 +28,7 @@ alias xclip="xclip -selection clipboard"
 alias x="xclip -selection clipboard"
 
 pwd_prompt() {
-  if [ $PWD != "/home/$USER" ]
+  if [ "$PWD" != "/home/$USER" ]
   then
     echo "$(dirs) "
   fi

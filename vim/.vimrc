@@ -22,6 +22,8 @@ nnoremap n j
 nnoremap e k
 nnoremap o l
 
+nnoremap <silent> <c-c> :call system('xclip -selection clipboard', @")<CR>
+
 " rearranging displaced keys
 " l = new line
 " h = end of word
