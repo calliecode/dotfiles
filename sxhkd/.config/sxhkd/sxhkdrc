@@ -31,6 +31,9 @@ super + shift + {1-9}
     dwmc tagex {0-8}
 super + {1-9}
     dwmc viewex {0-8}
+# reload sxhkd config
+super + x
+    pkill --signal SIGUSR1 sxhkd
 
 # Eventually I want to move all hotkeys to sxhkd
 # I'll need to read the source code to figure out
@@ -57,7 +60,9 @@ super + v
 	firefox
 super + a
     krita
-
+# copy external IP to clipboard
+super + i
+    curl -s https://ipecho.net/plain | xclip -selection clipboard
 
 # DWM Bindings: these are reserved
 #               by the window manager!
